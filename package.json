@@ -1,0 +1,35 @@
+{
+  "name": "retest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "normalize.styl": "^3.0.3",
+    "reset.styl": "^0.1.1"
+  },
+  "dependencies": {
+    "jeet": "^7.2.0",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.0.1",
+    "reset.css": "^2.0.2"
+  }
+}
