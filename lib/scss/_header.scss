@@ -1,0 +1,10 @@
+.header {
+    display: block;
+    .menu_ham {
+        float: right;
+        border: none;
+        svg {
+            height: 50px;
+        }
+    }
+}
