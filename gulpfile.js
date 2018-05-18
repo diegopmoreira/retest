@@ -1,23 +1,23 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
-const stylus = require('gulp-stylus');
+var sass = require('gulp-sass');
 const minify = require('gulp-minify');
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin')
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
+
+gulp.task('sass', function () {
+    return gulp.src('lib/scss/*.scss')
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(gulp.dest('dist/assets/css'))
+        .pipe(browserSync.stream());
+});
 gulp.task('pug', function () {
     return gulp.src('lib/pug/**/*.pug')
         .pipe(pug())
-        .pipe(gulp.dest('./dist/assets/pug'))
-        .pipe(browserSync.stream());
-});
-
-gulp.task('stylus', function () {
-    return gulp.src('lib/stylus/!(_*.styl)')
-        .pipe(stylus({ compress: true }))
-        .pipe(gulp.dest('dist/assets/css'))
+        .pipe(gulp.dest('./dist/'))
         .pipe(browserSync.stream());
 });
 
@@ -33,7 +33,8 @@ gulp.task('babel', function () {
     return gulp.src('lib/js/*.js')
         .pipe(babel({ presets: ['env'] }))
         .pipe(minify())
-        .pipe(gulp.dest('dist/assets/js'));
+        .pipe(gulp.dest('dist/assets/js'))
+        .pipe(browserSync.stream());
 });
 gulp.task('imagemin', () => {
     gulp.src('lib/img/*')
@@ -41,13 +42,14 @@ gulp.task('imagemin', () => {
         .pipe(gulp.dest('dist/assets/img'))
 }
 );
-gulp.task('serve', ['stylus', 'babel', 'pug', 'imagemin'], function () {
+gulp.task('serve', ['babel', 'pug','sass', 'imagemin'], function () {
     browserSync.init({
-        server: './dist/assets/pug/'
+        server: './dist/'
     });
-    gulp.watch('lib/stylus/*.styl', ['stylus']);
+    gulp.watch('lib/scss/*.scss', ['sass']);
     gulp.watch('lib/pug/*.pug', ['pug']);
-    gulp.watch('lib/js/*.js', ['babel']).on('change', browserSync.reload);
+    gulp.watch('lib/js/*.js', ['babel']);
+    
 });
 
 gulp.task('default', ['serve']);
