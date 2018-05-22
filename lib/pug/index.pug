@@ -7,7 +7,7 @@ html(lang="en")
 		link(rel='stylesheet', href='assets/css/style.css' )        
 		title Document        
 	body
-		header
+		header.header
 			nav.container
 				a.logo_header(href="#")
 					svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='131px', height='37.5px')
@@ -25,16 +25,52 @@ html(lang="en")
 						path(fill-rule='evenodd', fill='rgb(255, 255, 255)', d='M14.005,10.877 C17.668,10.338 21.457,11.251 21.331,11.292 C23.436,11.749 25.078,12.620 25.078,12.620 C31.056,15.732 28.530,19.549 28.530,19.549 C27.309,21.832 24.404,22.744 24.404,22.744 C24.067,22.869 23.941,22.661 23.941,22.661 C23.730,22.371 24.067,22.205 24.067,22.205 C25.962,20.919 26.467,19.508 26.467,19.508 C28.193,15.442 21.373,13.242 21.373,13.242 C17.331,11.749 12.615,12.413 12.615,12.413 C11.394,14.321 11.226,16.769 11.563,18.512 C11.984,20.670 12.994,22.205 12.994,22.205 C13.163,22.454 12.952,22.578 12.952,22.578 C12.742,22.703 12.531,22.495 12.531,22.495 C11.268,21.334 10.426,19.923 9.963,18.512 C8.910,15.358 9.921,12.828 9.921,12.828 C8.658,13.118 7.394,13.533 7.394,13.533 C7.015,13.699 6.889,13.491 6.889,13.491 C6.721,13.201 7.142,13.035 7.142,13.035 C8.489,12.288 10.342,11.707 10.342,11.707 C11.647,9.135 13.962,8.180 13.962,8.180 C17.752,6.437 21.415,7.724 21.415,7.724 C24.109,8.512 25.457,10.379 25.457,10.379 C25.709,10.670 25.499,10.836 25.499,10.836 C25.330,11.002 25.078,10.794 25.078,10.794 C23.520,9.425 21.457,9.093 21.457,9.093 C16.783,8.222 14.005,10.877 14.005,10.877 ')
 
 				button.menu_ham
-					svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 30 27')
-						defs
-							style.
-								.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}
-						title Hamburguer
-						g#Camada_2(data-name='Camada 2')
-							g#Hamburguer
-								line.cls-1(y1='10', x2='25', y2='10', x1='5')
-								line.cls-1(y1='15', x2='25', y2='15', x1='5')
-								line.cls-1(y1='20', x2='25', y2='20', x1='5')
-								
+					svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='32px', height='26px')
+						path(fill-rule='evenodd', stroke='rgb(255, 255, 255)', stroke-width='2px', stroke-linecap='round', stroke-linejoin='miter', fill='none', d='M2.000,2.500 L29.000,2.500 ')
+						path(fill-rule='evenodd', stroke='rgb(255, 255, 255)', stroke-width='2px', stroke-linecap='round', stroke-linejoin='miter', fill='none', d='M2.000,12.500 L29.000,12.500 ')
+						path(fill-rule='evenodd', stroke='rgb(255, 255, 255)', stroke-width='2px', stroke-linecap='round', stroke-linejoin='miter', fill='none', d='M2.000,22.500 L29.000,22.500 ')
 
+		section.intro
+			.container
+				.promo
+					img(src="assets/img/logo_lollapalooza_v3.png", alt="")
+				.hand
+					img(src="assets/img/mao.png", alt="")
+				.btn-intro
+					a.btn Participar
+		section.participe
+			.container
+				h2.want-to-go Quer ir pro lollapalooza
+				p.how-to Veja como participar
+				ul
+					li.wtg-item-1
+						svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='53.5px', height='75.5px')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M49.014,38.712 L49.014,39.820 L49.014,55.134 L49.014,59.065 C49.014,65.480 43.814,70.680 37.400,70.680 L23.451,70.680 C20.891,70.680 18.614,69.490 17.131,67.637 C17.129,67.635 17.127,67.634 17.126,67.632 C9.785,60.376 3.427,46.133 3.427,46.133 L3.458,46.133 C2.487,44.196 3.097,41.799 4.953,40.582 C6.950,39.274 10.089,40.171 10.939,41.828 L15.350,48.557 L15.350,41.223 L15.350,39.820 L15.350,18.896 C15.350,16.508 17.286,14.571 19.673,14.571 C22.062,14.571 23.998,16.508 23.998,18.896 L23.998,33.428 C24.633,31.832 26.190,30.703 28.012,30.703 C30.342,30.703 32.237,32.547 32.328,34.855 C32.975,33.202 34.605,32.044 36.500,32.109 C38.861,32.188 40.675,34.248 40.675,36.609 L40.675,36.935 C41.331,35.292 42.960,34.144 44.852,34.213 C47.206,34.299 49.014,36.356 49.014,38.712 Z')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M19.207,10.013 L19.207,2.999 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M24.817,11.416 L26.921,7.207 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M13.596,11.416 L11.492,7.207 ')
+						p Não basta querer, precisa clicar em participar.
+					li.wtg-item-2
+						svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='53.5px', height='70.5px')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M34.538,9.778 L45.391,9.778 C47.349,9.778 48.937,11.366 48.937,13.325 L48.937,62.453 C48.937,64.412 47.349,66.000 45.391,66.000 L6.547,66.000 C4.588,66.000 3.000,64.412 3.000,62.453 L3.000,13.325 C3.000,11.366 4.588,9.778 6.547,9.778 L17.056,9.778 ')
+							path(fill-rule='evenodd', fill-opacity='0', fill='rgb(0, 0, 0)', d='M1.500,67.500 L50.437,67.500 L50.437,1.500 L1.500,1.500 L1.500,67.500 Z')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M9.856,58.458 L42.081,58.458 L42.081,17.320 L9.856,17.320 L9.856,58.458 Z')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M17.056,26.233 L26.508,26.233 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M30.249,26.233 L35.084,26.233 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M23.869,33.775 L34.882,33.775 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M17.273,33.775 L19.912,33.775 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M17.056,41.317 L34.882,41.317 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M16.712,48.859 L27.827,48.859 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M31.885,48.859 L35.084,48.859 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M34.539,6.298 L34.539,13.232 L17.398,13.232 L17.398,6.298 L22.356,6.298 C22.523,4.448 24.076,2.999 25.969,2.999 C27.861,2.999 29.413,4.448 29.580,6.298 L34.539,6.298 Z')
 
+						p Depois é só preencher seus dados e confirmar o envio.
+					li.wtg-item-3
+						svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='53.5px', height='68.5px')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M45.957,3.000 L36.768,3.000 C35.589,3.000 34.553,3.788 34.248,4.928 C33.249,8.663 29.836,11.413 25.787,11.413 C21.739,11.413 18.325,8.663 17.326,4.928 C17.021,3.788 15.985,3.000 14.805,3.000 L5.617,3.000 C4.172,3.000 3.000,4.172 3.000,5.617 L3.000,61.383 C3.000,62.828 4.172,64.000 5.617,64.000 L15.254,64.000 C16.399,64.000 17.416,63.256 17.749,62.159 C18.840,58.560 22.185,55.936 26.137,55.936 C30.090,55.936 33.435,58.560 34.526,62.159 C34.859,63.256 35.876,64.000 37.021,64.000 L45.957,64.000 C47.402,64.000 48.574,62.828 48.574,61.383 L48.574,5.617 C48.574,4.172 47.402,3.000 45.957,3.000 Z')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M3.000,18.425 L47.873,18.425 ')
+							path(fill-rule='evenodd', stroke='rgb(242, 34, 74)', stroke-width='3px', stroke-linecap='round', stroke-linejoin='round', fill='none', d='M25.073,26.244 L22.007,32.457 C21.891,32.692 21.666,32.854 21.407,32.892 L14.551,33.889 C13.898,33.983 13.637,34.787 14.109,35.248 L19.070,40.084 C19.258,40.266 19.344,40.530 19.300,40.789 L18.128,47.617 C18.017,48.268 18.699,48.765 19.284,48.457 L25.417,45.233 C25.648,45.111 25.926,45.111 26.158,45.233 L32.290,48.457 C32.875,48.765 33.558,48.268 33.446,47.617 L32.275,40.789 C32.231,40.530 32.316,40.266 32.504,40.084 L37.465,35.248 C37.939,34.787 37.677,33.983 37.023,33.889 L30.168,32.892 C29.908,32.854 29.684,32.692 29.567,32.457 L26.502,26.244 C26.209,25.652 25.365,25.652 25.073,26.244 Z')
+
+						p Pronto! Agora é só começar a torcer. O seu número da sorte será enviado diretamente por e-mail e SMS.
+				.btn-participe
+					a.btn Participar

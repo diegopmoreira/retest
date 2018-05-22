@@ -1,0 +1,58 @@
+.participe{
+    background: #ffffff;
+    height: 100vh;
+    background-image: url("../img/participe_bottom.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .container{
+        .want-to-go{
+            display:block;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 23px;
+            color: $red;
+            font-family: Gilroy-ExtraBold;
+            width: 50vw;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+        .how-to{
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;            
+            font-family: Gilroy-Light;
+            font-size: 18px;
+            color: $blue;
+            display: block;
+            line-height: 23px;
+        }
+        ul{
+           li{
+               ::before{
+                   content: "";
+                   display: block;
+                   width: 15px;
+                   height:15px;
+                   background: $blue;
+                   border-radius: 50%;
+                   border: 5px solid $blue;
+                   box-shadow: 0 0 0 5px $blue;
+
+                   
+
+               }
+           } 
+            
+        }
+        .btn-participe{
+            position: relative;
+            bottom: 0;
+            text-align: center;
+            width: 100vw;
+            margin-bottom: 5vh;
+            font-family: Gilroy-Light;
+            font-size: 18px;
+        }
+    }
+}

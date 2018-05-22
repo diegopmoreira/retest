@@ -1,0 +1,37 @@
+.intro {
+    background: url("../img/header_contceitual.png");
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    z-index: -100;
+    .container {
+        width: 100vw;
+        .promo {
+            position: relative;
+            top: 105px;
+            width: 100%;
+            img {
+                width: 100vw;
+            }
+        }
+        .hand {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            img {
+                display: block;
+                margin: 0 auto;
+                height: 65vh;
+            }
+        }
+        .btn-intro {
+            position: relative;
+            bottom: 0;
+            text-align: center;
+            width: 100vw;
+            margin-bottom: 5vh;
+            font-family: Gilroy-Light;
+            font-size: 18px;
+        }
+    }
+}

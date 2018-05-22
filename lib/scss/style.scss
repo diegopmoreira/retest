@@ -2,11 +2,34 @@
 @import '../../node_modules/reset.css/reset';
 @import '../../node_modules/normalize.css/normalize';
 
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(../fonts/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+  }
+  $red: #f2224a;
+  $blue: #52b3af;
 @import 'header';
+@import 'intro';
+@import 'participe';
 @import 'content';
-@import 'modal';
+@import 'faq';
+@import 'footer';
+
+
+
 body{
-    background:blue;
+    .btn{
+        padding: 3vh 32vw;
+        color: white;
+        background: $red;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
 }
 
 
