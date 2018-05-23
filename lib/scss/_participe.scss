@@ -1,12 +1,12 @@
-.participe{
+.participe {
     background: #ffffff;
     height: 100vh;
     background-image: url("../img/participe_bottom.png");
     background-position: bottom;
     background-repeat: no-repeat;
-    .container{
-        .want-to-go{
-            display:block;
+    .container {
+        .want-to-go {
+            display: block;
             text-transform: uppercase;
             font-size: 24px;
             line-height: 23px;
@@ -17,42 +17,74 @@
             margin: 0 auto;
             margin-top: 70px;
         }
-        .how-to{
+        .how-to {
             text-align: center;
             margin: 0 auto;
-            margin-top: 20px;            
+            margin-top: 20px;
             font-family: Gilroy-Light;
             font-size: 18px;
             color: $blue;
             display: block;
             line-height: 23px;
         }
-        ul{
-           li{
-               ::before{
-                   content: "";
-                   display: block;
-                   width: 15px;
-                   height:15px;
-                   background: $blue;
-                   border-radius: 50%;
-                   border: 5px solid $blue;
-                   box-shadow: 0 0 0 5px $blue;
-
-                   
-
-               }
-           } 
-            
+        ul {
+            margin-top: 5vh;
+            &::before {
+                content: "";
+                display: block;
+                width: 2px;
+                background: $blue;
+                height: 40vh;
+                position: absolute;
+                left: 6.8vw;
+                z-index: 5;
+                margin-top: 5vh;
+            }
+            li {
+                display: block;
+                clear: both;
+                overflow: auto;
+                &+li {
+                    margin-top: 50px;
+                }
+                >svg {
+                    float: left;
+                    margin-left: 15px;
+                }
+                >p {
+                    float: left;
+                    display: block;
+                    width: 50vw;
+                    font-size: 16px;
+                    font-family: Gilroy-Light;
+                    margin-left: 5vw;
+                    margin-top: 2vh;
+                }
+                &::before {
+                    content: "";
+                    float: left;
+                    display: block;
+                    width: 7px;
+                    height: 7px;
+                    background: $blue;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                    box-shadow: 0 0 0 4px $blue;
+                    position: relative;
+                    margin-top: 5vh;
+                    margin-left: 20px;
+                    z-index: 10;
+                }
+            }
         }
-        .btn-participe{
+        .btn-participe {
             position: relative;
             bottom: 0;
             text-align: center;
             width: 100vw;
             margin-bottom: 5vh;
-            font-family: Gilroy-Light;
-            font-size: 18px;
+
+            margin-top: 15vh;
         }
     }
 }

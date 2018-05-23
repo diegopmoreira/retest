@@ -15,7 +15,7 @@
 @import 'header';
 @import 'intro';
 @import 'participe';
-@import 'content';
+@import 'conta';
 @import 'faq';
 @import 'footer';
 
@@ -29,6 +29,8 @@ body{
         text-align: center;
         text-transform: uppercase;
         margin: 0 auto;
+        font-family: Gilroy-Light;
+        font-size: 18px;
     }
 }
 

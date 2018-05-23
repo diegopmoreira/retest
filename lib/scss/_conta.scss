@@ -1,0 +1,34 @@
+.conta{
+    height: 50vh;
+    background: $blue;
+    .container{
+            
+        p{
+            padding-top: 30px;
+            margin-left: 60px;
+            display: block;
+            font-family: Gilroy-Light;
+            text-transform: uppercase;
+            font-size: 16px;
+            .bigger{
+                font-size: 32px;
+                font-family: Gilroy-ExtraBold;
+            }
+        }
+        .btn-conta{
+            position: relative;
+            bottom: 0;
+            text-align: center;
+            width: 100vw;
+            margin-top: 40px;
+            .btn{
+                color: white;
+                background: transparent;
+                border: 3px solid white;
+
+
+            }
+            
+        }
+    }
+}
