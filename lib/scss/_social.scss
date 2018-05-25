@@ -1,0 +1,38 @@
+.social{
+    background: $gray2;
+    .container{
+        h2{
+            font-family: Gilroy-ExtraBold;
+                font-size: 23px;
+                line-height: 24px;
+                color: $red2;
+                text-align: center;
+                display: block;
+                width: 80vw;
+                margin: 0 auto;
+                padding-top: 70px;
+        }
+        .icons{
+            display: table;
+            margin: auto;
+            margin-top: 70px;
+            width: 80vw;
+            text-align: center;
+                svg{
+                    height: 30px;
+                    display: inline-block;
+                    width: 30px;
+                    margin-bottom: 50px;
+                    color: $red2;
+                    fill: currentColor;
+                    path{
+                        color: $red2;
+                        fill: currentColor;
+                    }
+                    &+ svg{
+                        margin-left:35px;
+                    }
+                }
+        }
+    }
+}

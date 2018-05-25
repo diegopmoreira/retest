@@ -1,12 +1,12 @@
-.faq {
-    height: 85vh;
-    background: $red;
+.forgot {
+    background-image: url(../img/esqueceu.png);
+    height: 48vh;
     .container {
         h2 {
             font-family: Gilroy-ExtraBold;
             font-size: 23px;
             line-height: 24px;
-            color: white;
+            color: $red;
             text-transform: uppercase;
             text-align: center;
             display: block;
@@ -14,16 +14,18 @@
             margin: 0 auto;
             padding-top: 70px;
         }
-        p {
-            width: 85vw;
-            font-family: Gilroy-Light;
-            font-size: 16px;
+        h3 {
             text-align: center;
             margin: 0 auto;
             margin-top: 20px;
+            font-family: Gilroy-Light;
+            font-size: 18px;
             color: white;
+            width: 60vw;
+            display: block;
+            line-height: 23px;
         }
-        .btn-faq {
+        .btn-forgot {
             position: relative;
             bottom: 0;
             text-align: center;

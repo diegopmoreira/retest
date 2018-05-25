@@ -1,9 +1,9 @@
-.participe {
+.enjoy {
     background: #ffffff;
     height: 100vh;
     background-image: url("../img/participe_bottom.png");
     background-position: bottom;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     .container {
         .want-to-go {
             display: block;
@@ -59,6 +59,7 @@
                     font-family: Gilroy-Light;
                     margin-left: 5vw;
                     margin-top: 2vh;
+                    color: $gray;
                 }
                 &::before {
                     content: "";
@@ -77,13 +78,12 @@
                 }
             }
         }
-        .btn-participe {
+        .btn-enjoy {
             position: relative;
             bottom: 0;
             text-align: center;
             width: 100vw;
             margin-bottom: 5vh;
-
             margin-top: 15vh;
         }
     }

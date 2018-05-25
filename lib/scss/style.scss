@@ -11,12 +11,21 @@
     src: url(../fonts/Gilroy-ExtraBold.otf);
   }
   $red: #f2224a;
+  $red2: #dd052c;
   $blue: #52b3af;
+  $gray: #555555;
+  $gray2: #ebebeb;
+  $gray3: #4d4e52;
 @import 'header';
 @import 'intro';
 @import 'participe';
 @import 'conta';
+@import 'esqueceu';
+@import 'results';
+@import 'ready';
 @import 'faq';
+@import 'social';
+@import 'contact';
 @import 'footer';
 
 
