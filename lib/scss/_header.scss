@@ -1,7 +1,7 @@
 .header {
-        background: transparent;
-		position: absolute;
-		width: 100%;
+    background: transparent;
+    position: absolute;
+    width: 100%;
     .container {
         .logo_header {
             display: inline-block;
@@ -15,18 +15,62 @@
             margin: 25px 20px 0 0;
             cursor: pointer;
         }
-        .menu{
+        .menu {
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.6);            
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
             z-index: 10;
             position: absolute;
             top: 0;
-            ul{
+            text-align: end;
+            display: none;
+            .menu_close {
+                padding: 0px;
+                border: none;
+                display: inline-block;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            ul {
                 background: white;
-                width: 85%;
+                width: 80%;
                 position: relative;
                 float: right;
+                text-align: start;
+                height: 80%;
+                border-left: 2px solid $red;
+                overflow: scroll;
+                li {
+                    padding: 30px;
+                    a {
+                        text-decoration: none;
+                        color: $gray;
+                        font-family: Gilroy-Light;
+                        font-size: 1.15rem;
+                    }
+                    &::after {
+                        content: "";
+                        display: block;
+                        background: $gray2;
+                        text-align: center;
+                        width: 90%;
+                        height: 2px;
+                        margin-top: 10px;
+                    }
+                }
+                .btn-menu {
+                    position: relative;
+                    display: block;
+                    .btn{
+                        padding: 1vh 16vw;
+                        width: 50%;
+                        margin: -10px auto;
+                        
+                    }
+                }
             }
+           
         }
     }
 }
