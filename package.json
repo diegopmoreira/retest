@@ -29,7 +29,7 @@
   "dependencies": {
     "jeet": "^7.2.0",
     "normalize.css": "^8.0.0",
-    "npm": "^6.0.1",
+    "npm": "^6.1.0",
     "reset.css": "^2.0.2"
   }
 }

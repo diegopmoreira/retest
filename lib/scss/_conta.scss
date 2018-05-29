@@ -5,24 +5,26 @@
     background-position: bottom;
     background-repeat: repeat-x;
     .container {
+        position: relative;
+        height: 75%;
         p {
             padding-top: 30px;
-            margin-left: 60px;
+            margin: 0 auto;
+            width: 200px;
             display: block;
             font-family: Gilroy-Light;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: 1rem;
             .bigger {
-                font-size: 32px;
+                font-size: 2rem;
                 font-family: Gilroy-ExtraBold;
             }
         }
         .btn-account {
-            position: relative;
+            position: absolute;
             bottom: 0;
             text-align: center;
             width: 100vw;
-            margin-top: 40px;
             .btn {
                 color: white;
                 background: transparent;

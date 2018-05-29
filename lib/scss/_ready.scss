@@ -2,19 +2,22 @@
     background-image: url(../img/participe_bottom.png);
     background-position: bottom;
     background-repeat: repeat-x;
+    height: 85vh;
     .container {
+        position: relative;
+        height: 90%;
         .img-ready {
             height: 35vh;
-            img {
-                width: 100%;
-            }
+            background-image: url("../img/img_preparado_v2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .are-you {
             height: 50vh;
             h2 {
                 font-family: Gilroy-ExtraBold;
-                font-size: 23px;
-                line-height: 24px;
+                font-size: 1.5rem;
+                line-height: 2rem;
                 color: $red;
                 text-transform: uppercase;
                 text-align: center;
@@ -28,16 +31,16 @@
                 margin: 0 auto;
                 margin-top: 20px;
                 font-family: Gilroy-Light;
-                font-size: 18px;
+                font-size: 1.17rem;
                 color: $blue;
                 display: block;
-                line-height: 23px;
+                line-height: 1.5rem;
                 width: 85vw;
                 display: block;
-                line-height: 23px;
+               
             }
             .btn-ready {
-                position: relative;
+                position: absolute;
                 bottom: 0;
                 text-align: center;
                 width: 100vw;
