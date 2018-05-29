@@ -4,9 +4,10 @@
     background-image: url("../img/conta_bottom.png");
     background-position: bottom;
     background-repeat: repeat-x;
+    min-height: 280px;
     .container {
         position: relative;
-        height: 75%;
+        height: 80%;
         p {
             padding-top: 30px;
             margin: 0 auto;

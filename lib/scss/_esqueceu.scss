@@ -1,7 +1,9 @@
 .forgot {
     background-image: url(../img/esqueceu.png);
     background-size: cover;
+    background-position: center;
     height: 48vh;
+    min-height: 380px;
     .container {
         position: relative;
         height: 75%;
