@@ -48,13 +48,15 @@ html(lang="en")
 							a(href="#") Perguntas Frequentes
 						li
 							a(href="#") Fale Conosco
-						.btn-menu
+						li.btn-menu
 							.btn Abra sua conta
 
 		section.intro
 			.container
 				.promo
-					img(src="assets/img/logo_lollapalooza_desktop_V3.png", alt="")
+					picture
+						source(media="(min-width: 580px)", srcset="assets/img/logo_lollapalooza_desktop_V3.png")
+						img(src="assets/img/logo_lollapalooza_V3.png", alt="")
 				.hand
 					img(src="assets/img/mao.png", alt="")
 				.btn-intro

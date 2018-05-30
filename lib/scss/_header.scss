@@ -2,6 +2,7 @@
     background: transparent;
     position: absolute;
     width: 100%;
+    height: 60px;
     .container {
         .logo_header {
             display: inline-block;
@@ -14,6 +15,9 @@
             background: transparent;
             margin: 25px 20px 0 0;
             cursor: pointer;
+            @include desktop{
+                display: none;
+            }
         }
         .menu {
             height: 100vh;
@@ -23,7 +27,12 @@
             position: absolute;
             top: 0;
             text-align: end;
-            display: none;
+            display: block;
+            @include desktop{
+                display: inline-block;
+                background: none;
+                height: 100%;
+            }
             .menu_close {
                 padding: 0px;
                 border: none;
@@ -31,6 +40,9 @@
                 background: transparent;
                 position: relative;
                 cursor: pointer;
+                @include desktop{
+                    display: none;
+                }
             }
             ul {
                 background: white;
@@ -41,13 +53,38 @@
                 height: 80%;
                 border-left: 2px solid $red;
                 overflow: scroll;
+                @include desktop{
+                    width: 90%;
+                    display: block;
+                    position: relative;
+                    height: 60px;
+                    background: transparent;
+                    overflow:visible; 
+                    border: none;
+                    
+                    
+                }
+                
                 li {
                     padding: 30px;
+                    @include desktop{
+                        display: inline-block;
+                        background: transparent;
+                        padding: 10px;
+                        margin: 20px auto;
+                        
+                        
+                    }
                     a {
                         text-decoration: none;
                         color: $gray;
                         font-family: Gilroy-Light;
                         font-size: 1.15rem;
+                        @include desktop{
+                            color: white;
+                            font-size: 1rem;
+                            white-space: nowrap;
+                        }
                     }
                     &::after {
                         content: "";
@@ -57,15 +94,28 @@
                         width: 90%;
                         height: 2px;
                         margin-top: 10px;
+                        @include desktop{
+                            display: none;
+                            
+                        }
                     }
                 }
                 .btn-menu {
                     position: relative;
                     display: block;
+                    @include desktop{
+                        display: inline-block;
+                        width: 50px;
+                    }
                     .btn{
                         padding: 1vh 16vw;
                         width: 50%;
                         margin: -10px auto;
+                        @include desktop{
+                            padding: 10px 50px;
+                            font-size: 1rem;
+                            white-space: nowrap;
+                        }
                         
                     }
                 }
