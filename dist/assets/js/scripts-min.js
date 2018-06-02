@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var menu_ham=document.getElementsByClassName("menu_ham"),menu_close=document.getElementsByClassName("menu_close"),menu=document.getElementsByClassName("menu");function click_ham(){menu[0].style.display="block"}function click_close(){menu[0].style.display="none"}menu_ham[0].addEventListener("click",click_ham),menu_close[0].addEventListener("click",click_close);

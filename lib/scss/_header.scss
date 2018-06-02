@@ -4,6 +4,8 @@
     width: 100%;
     height: 60px;
     .container {
+        max-width: 1220px;
+        margin: 0 auto;
         .logo_header {
             display: inline-block;
             margin: 20px 0 0 20px;
@@ -27,11 +29,14 @@
             position: absolute;
             top: 0;
             text-align: end;
-            display: block;
+            display: none;
             @include desktop{
                 display: inline-block;
                 background: none;
+                width: calc(100% - 180px);
                 height: 100%;
+                position: relative;
+                float: right;
             }
             .menu_close {
                 padding: 0px;
@@ -54,14 +59,14 @@
                 border-left: 2px solid $red;
                 overflow: scroll;
                 @include desktop{
-                    width: 90%;
+                    width: 100%;
                     display: block;
                     position: relative;
                     height: 60px;
                     background: transparent;
                     overflow:visible; 
                     border: none;
-                    
+                    white-space: nowrap;                    
                     
                 }
                 
@@ -84,6 +89,9 @@
                             color: white;
                             font-size: 1rem;
                             white-space: nowrap;
+                            &:hover{
+                                color: black;
+                            }
                         }
                     }
                     &::after {
@@ -105,7 +113,7 @@
                     display: block;
                     @include desktop{
                         display: inline-block;
-                        width: 50px;
+                        
                     }
                     .btn{
                         padding: 1vh 16vw;
@@ -115,6 +123,8 @@
                             padding: 10px 50px;
                             font-size: 1rem;
                             white-space: nowrap;
+                            position: relative;
+                            width: 60%;
                         }
                         
                     }
