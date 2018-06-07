@@ -26,14 +26,15 @@
             bottom: 0;
             width: 100%;
             @include desktop{
-                left: 10%;
+                left: 50%;
+                width: auto;
             }
             img {
                 display: block;
                 margin: 0 auto;
                 height: 65vh;
                 @include desktop{
-                    height: 100vh;
+                    height: 100%;
                 }
             }
         }
