@@ -29,7 +29,12 @@
             position: absolute;
             top: 0;
             text-align: end;
-            display: none;
+            display: block;
+            left: 100%;
+            transition: all 0.4s ease-out;
+            &.open{
+                left: 0;
+            }
             @include desktop{
                 display: inline-block;
                 background: none;
@@ -37,6 +42,7 @@
                 height: 100%;
                 position: relative;
                 float: right;
+                left: auto;
             }
             .menu_close {
                 padding: 0px;
@@ -59,7 +65,7 @@
                 border-left: 2px solid $red;
                 overflow: scroll;
                 @include desktop{
-                    width: 100%;
+                    width: calc(100% - 20px);
                     display: block;
                     position: relative;
                     height: 60px;

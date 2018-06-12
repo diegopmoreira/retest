@@ -1,5 +1,5 @@
 .faq {
-    height: 85vh;
+    height: 75vh;
     background: $red;
     min-height: 580px;
     .container {
@@ -30,7 +30,7 @@
             position: absolute;
             bottom: 0;
             text-align: center;
-            width: 100vw;
+            width: 100%;
             margin-top: 60px;
             .btn {
                 color: white;

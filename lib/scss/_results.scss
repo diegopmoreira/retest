@@ -4,6 +4,10 @@
     background-repeat: repeat-x;
     height: 80vh;
     min-height: 480px;
+    @include desktop{
+        height: 60vh;
+    }
+
     .container {
         position: relative;
         height: 90%;
@@ -48,7 +52,7 @@
             position: absolute;
             bottom: 0;
             text-align: center;
-            width: 100vw;
+            width: 100%;
             margin-bottom: 5vh;
             margin-top: 15vh;
         }

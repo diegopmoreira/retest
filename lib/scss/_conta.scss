@@ -5,9 +5,14 @@
     background-position: bottom;
     background-repeat: repeat-x;
     min-height: 280px;
+    
     .container {
         position: relative;
         height: 80%;
+        @include desktop{
+            width: 590px;
+            margin: 0 auto;
+        }
         p {
             padding-top: 30px;
             margin: 0 auto;
@@ -20,12 +25,26 @@
                 font-size: 2rem;
                 font-family: Gilroy-ExtraBold;
             }
+            @include desktop{
+                display: inline-block;
+                float: left;
+                top: 20%;
+                position: relative;
+                color: white;
+            }
         }
         .btn-account {
             position: absolute;
             bottom: 0;
             text-align: center;
-            width: 100vw;
+            width: 100%;
+            @include desktop{
+                position: relative;
+                display: inline-block;
+                float: left;
+                width: auto;
+                top: 50%;
+            }
             .btn {
                 color: white;
                 background: transparent;

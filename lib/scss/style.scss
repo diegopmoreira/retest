@@ -4,11 +4,16 @@
 
 @font-face {
     font-family: Gilroy-Light;
+    src: url(../fonts/Gilroy-Light.eot);
     src: url(../fonts/Gilroy-Light.otf);
+    
   }
   @font-face {
     font-family: Gilroy-ExtraBold;
+    src: url(../fonts/Gilroy-ExtraBold.eot);
     src: url(../fonts/Gilroy-ExtraBold.otf);
+    
+    
   }
   $red: #f2224a;
   $red2: #dd052c;
@@ -50,7 +55,7 @@ body{
         font-size: 18px;
         cursor: pointer;
         @include desktop{
-          padding: 25px 140px;
+          padding: 20px 115px;
           
         }
        &:hover{

@@ -4,6 +4,10 @@
     display: block;
     height: 100vh;
     z-index: -100;
+    @include desktop{
+        background: url("../img/header_contceitual_desk.png");
+        background-size: cover;
+    }
     .container {
         height: 100%;
         .promo {
@@ -16,7 +20,7 @@
             picture{
                 
                 img {
-                    width: 100vw;
+                    width: 100%;
                     height: auto;
                 }
             }
@@ -24,7 +28,7 @@
         .hand {
             position: absolute;
             bottom: 0;
-            width: 100%;
+            width: calc(100% - 20px);
             @include desktop{
                 left: 50%;
                 width: auto;
@@ -42,7 +46,7 @@
             position: absolute;
             bottom: 0;
             text-align: center;
-            width: 100vw;
+            width: 100%;
             margin-bottom: 5vh;
             @include desktop{
                 right: 10%;

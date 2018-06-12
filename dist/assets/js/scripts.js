@@ -7,9 +7,13 @@ menu_ham[0].addEventListener("click", click_ham);
 menu_close[0].addEventListener("click", click_close);
 
 function click_ham() {
-  menu[0].style.display = "block";
+  // menu[0].classList.add('open');
+  var classes = menu[0].className;
+  menu[0].className = classes + ' open';
 }
 
 function click_close() {
-  menu[0].style.display = "none";
+  var classes = menu[0].className;
+  classes = classes.replace("open", "");
+  menu[0].className = classes;
 }
